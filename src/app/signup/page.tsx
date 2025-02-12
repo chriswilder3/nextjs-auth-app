@@ -7,7 +7,7 @@ import React from "react"
 import { useRouter } from "next/navigation" // Why is this used? in
             // addition to file based routing, we need dynamic routing for
             // programatic navigation,access route parameters ([id]) etc 
-import { axios } from "axios"
+import axios from "axios"
 
 export default function (){
     const [user, setUser] = React.useState({
@@ -21,7 +21,7 @@ export default function (){
     }
 
     return (
-        <div className="bg-gray-700 ">
+        <div className="bg-gray-700">
             <h1 className="text-center text-white text-2xl font-medium">
             Welcome to Sign up!
             </h1>
